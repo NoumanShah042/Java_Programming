@@ -1,0 +1,120 @@
+ 1 ) Algorithms and data structures
+
+learn and practice data structures (trees ,linked list), practice algorithms 
+
+2) see some other people's code ,  for efficient code  (use github)
+
+3) participate in competitive programming
+ hackerrank, hackerearth, codechef  (compete with people)
+
+4)  explore other programming languages
+
+5) build project
+
+
+To start you will have to learn proram by learning syntyax
+
+5 Steps to improve programming skills :
+
+*****************************************************
+*****************************************************
+
+Summary
+1. Algorithms and Data Structure
+- learns and practice problems
+
+2. Read others Code
+- Compare or see their code, look at the effeciency and try to improve yours.
+
+3. Competitive Programming
+- There are many websites where you can compete with others or just improve your level
+- Create account on those website and start practising
+
+4. Explore Other Languages
+-Different languages have different features and different ways to implementing things.
+- Try to learn them and implement.
+
+5. Build Projects
+- Small or big just start building project
+- Build a project of your interest.
+
+
+******************************************************
+******************************************************
+
+Software develper roles
+
+*front end developer
+*back end developer
+*full stack dev
+*dev ops engineer
+*data scientist
+*software engineer(of some language)
+*test Engineer(QA)
+*security engineer
+
+
+
+1)python + Data Science(DS) vs Machine Learning(ML)
+
+2) database admin system admin  (linux , sql, database(RDBMS), NOSQL)
+ 
+3) Psedo web developer
+         HTML, CSS,Javascript,
+
+
+https://www.switchup.org/blog/backend-vs-frontend#:~:text=Put%20plainly%2C%20back%20end%20developers,or%20all%20of%20the%20above.
+
+
+Front-end web development: JavaScript
+Back-end web development: JavaScript, Java, Python, PHP, Ruby
+Mobile development: Swift, Java, C#
+Game development: C++, C#
+Desktop applications: Java, C++, Python
+Systems programming: C, Rust
+
+
+
+*****************************************************
+*****************************************************
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ClassDiagram name="DP_Decorator_BSCS">
+  <ClassDiagramComponents>
+    <Class name="Beverage" package="" visibility="public" isAbstract="true" xPosition="333.0" yPosition="361.0">
+      <Fields>
+        <Field name="description" type="String" visibility="package"/>
+      </Fields>
+      <Constructors/>
+      <Methods>
+        <Method name="getDescription" returnType="String" visibility="public"/>
+        <Method name="cost" returnType="double" visibility="public" isAbstract="true"/>
+      </Methods>
+    </Class>
+    <Class name="Client" package="" visibility="public" xPosition="56.0" yPosition="46.0">
+      <Fields/>
+      <Constructors/>
+      <Methods>
+        <Method name="main" returnType="void" visibility="public" isStatic="true">
+          <Argument type="String[]" name="args"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="CondimentDecorator" package="" visibility="public" isAbstract="true" xPosition="333.0" yPosition="46.0">
+      <Fields/>
+      <Constructors/>
+      <Methods>
+        <Method name="getDescription" returnType="String" visibility="public" isAbstract="true"/>
+      </Methods>
+    </Class>
+    <Class name="Espresso" package="" visibility="public" xPosition="73.0" yPosition="291.0">
+      <Fields/>
+      <Constructors>
+        <Constructor visibility="public"/>
+      </Constructors>
+      <Methods>
+        <Method name="cost" returnType="double" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="HouseBlend" package="" visibility="public" xPosition="73.0" yPosition="446.0">
+      <Fields/>
+      <Constructors>
+        <Constructor visibility="public"/>
+      </Constructors>
+      <Methods>
+        <Method name="cost" returnType="double" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="Mocha" package="" visibility="public" xPosition="660.0" yPosition="359.0">
+      <Fields>
+        <Field name="beverage" type="Beverage" visibility="package"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public">
+          <Argument type="Beverage" name="beverage"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="getDescription" returnType="String" visibility="public"/>
+        <Method name="cost" returnType="double" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="WhippedCream" package="" visibility="public" xPosition="660.0" yPosition="62.0">
+      <Fields>
+        <Field name="beverage" type="Beverage" visibility="package"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public">
+          <Argument type="Beverage" name="beverage"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="getDescription" returnType="String" visibility="public"/>
+        <Method name="cost" returnType="double" visibility="public"/>
+      </Methods>
+    </Class>
+  </ClassDiagramComponents>
+  <ClassDiagramRelations>
+    <IsRelation name="is" source="Mocha" target="CondimentDecorator"/>
+    <IsRelation name="is" source="CondimentDecorator" target="Beverage"/>
+    <IsRelation name="is" source="WhippedCream" target="CondimentDecorator"/>
+    <HasRelation name="beverage" source="Mocha" target="Beverage" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <IsRelation name="is" source="HouseBlend" target="Beverage"/>
+    <HasRelation name="beverage" source="WhippedCream" target="Beverage" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <IsRelation name="is" source="Espresso" target="Beverage"/>
+  </ClassDiagramRelations>
+</ClassDiagram>

@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ClassDiagram name="MVC_architecture">
+  <ClassDiagramComponents>
+    <Class name="Driver" package="" visibility="public" xPosition="20.0" yPosition="20.0">
+      <Fields/>
+      <Constructors/>
+      <Methods>
+        <Method name="main" returnType="void" visibility="public" isStatic="true">
+          <Argument type="String[]" name="args"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="Student" package="" visibility="public" xPosition="20.0" yPosition="160.0">
+      <Fields>
+        <Field name="rollNum" type="String" visibility="private"/>
+        <Field name="name" type="String" visibility="private"/>
+        <Field name="gender" type="String" visibility="private"/>
+      </Fields>
+      <Constructors/>
+      <Methods>
+        <Method name="getGender" returnType="String" visibility="public"/>
+        <Method name="getName" returnType="String" visibility="public"/>
+        <Method name="getRollNum" returnType="String" visibility="public"/>
+        <Method name="setRollNum" returnType="void" visibility="public">
+          <Argument type="String" name="rollNum"/>
+        </Method>
+        <Method name="setName" returnType="void" visibility="public">
+          <Argument type="String" name="name"/>
+        </Method>
+        <Method name="setGender" returnType="void" visibility="public">
+          <Argument type="String" name="gender"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="StudentCtrl" package="" visibility="public" xPosition="376.0" yPosition="38.0">
+      <Fields>
+        <Field name="model" type="Student" visibility="private"/>
+        <Field name="view" type="StudentView" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public">
+          <Argument type="Student" name="model"/>
+          <Argument type="StudentView" name="view"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="setStudentNmae" returnType="void" visibility="public">
+          <Argument type="String" name="name"/>
+        </Method>
+        <Method name="setStudentRollNum" returnType="void" visibility="public">
+          <Argument type="String" name="rollNum"/>
+        </Method>
+        <Method name="setStudentGender" returnType="void" visibility="public">
+          <Argument type="String" name="gender"/>
+        </Method>
+        <Method name="getSname" returnType="String" visibility="public"/>
+        <Method name="getSRollNum" returnType="String" visibility="public"/>
+        <Method name="getSGender" returnType="String" visibility="public"/>
+        <Method name="viewStudentData" returnType="void" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="StudentDataUC_Ctrl1" package="" visibility="public" xPosition="397.0" yPosition="445.0">
+      <Fields>
+        <Field name="model" type="Student" visibility="package"/>
+        <Field name="view" type="StudentView" visibility="package"/>
+        <Field name="controller" type="StudentCtrl" visibility="package"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public"/>
+      </Constructors>
+      <Methods>
+        <Method name="viewData" returnType="void" visibility="public"/>
+        <Method name="getDataFromdatabase" returnType="Student" visibility="private" isStatic="true"/>
+      </Methods>
+    </Class>
+    <Class name="StudentView" package="" visibility="public" xPosition="609.0" yPosition="343.0">
+      <Fields/>
+      <Constructors/>
+      <Methods>
+        <Method name="printData" returnType="void" visibility="public">
+          <Argument type="String" name="SRollNum"/>
+          <Argument type="String" name="SName"/>
+          <Argument type="String" name="SGender"/>
+        </Method>
+      </Methods>
+    </Class>
+  </ClassDiagramComponents>
+  <ClassDiagramRelations>
+    <HasRelation name="view" source="StudentCtrl" target="StudentView" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <HasRelation name="controller" source="StudentDataUC_Ctrl1" target="StudentCtrl" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <HasRelation name="view" source="StudentDataUC_Ctrl1" target="StudentView" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <HasRelation name="model" source="StudentCtrl" target="Student" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <HasRelation name="model" source="StudentDataUC_Ctrl1" target="Student" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <UseRelation source="StudentDataUC_Ctrl1" target="Student" sourceCardinality="1..1" targetCardinality="1..1"/>
+  </ClassDiagramRelations>
+</ClassDiagram>

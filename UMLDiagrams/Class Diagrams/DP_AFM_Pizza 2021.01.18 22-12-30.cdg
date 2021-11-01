@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ClassDiagram name="DP_AFM_Pizza">
+  <ClassDiagramComponents>
+    <Class name="CheesePizza" package="" visibility="public" xPosition="301.0" yPosition="47.0">
+      <Fields>
+        <Field name="ingredientFactory" type="PizzaIngredientFactory" visibility="package"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public">
+          <Argument type="PizzaIngredientFactory" name="pif"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="prepare" returnType="void" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="ChickenPizza" package="" visibility="public" xPosition="620.0" yPosition="20.0">
+      <Fields>
+        <Field name="ingredientFactory" type="PizzaIngredientFactory" visibility="package"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public">
+          <Argument type="PizzaIngredientFactory" name="pif"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="prepare" returnType="void" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="ChilliTomatoSauce" package="" visibility="public" xPosition="920.0" yPosition="20.0">
+      <Fields/>
+      <Constructors/>
+      <Methods/>
+    </Class>
+    <Class name="ChoppedPepperoni" package="" visibility="public" xPosition="1220.0" yPosition="20.0">
+      <Fields/>
+      <Constructors/>
+      <Methods/>
+    </Class>
+    <Class name="Client" package="" visibility="public" xPosition="1978.0" yPosition="198.0">
+      <Fields/>
+      <Constructors/>
+      <Methods>
+        <Method name="main" returnType="void" visibility="public" isStatic="true">
+          <Argument type="String[]" name="args"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="MozzarellaCheese" package="" visibility="public" xPosition="2120.0" yPosition="20.0">
+      <Fields/>
+      <Constructors/>
+      <Methods/>
+    </Class>
+    <Class name="PepporoniPizza" package="" visibility="public" xPosition="320.0" yPosition="420.0">
+      <Fields>
+        <Field name="ingredientFactory" type="PizzaIngredientFactory" visibility="package"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public">
+          <Argument type="PizzaIngredientFactory" name="pif"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="prepare" returnType="void" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="Pizza" package="" visibility="public" isAbstract="true" xPosition="620.0" yPosition="420.0">
+      <Fields>
+        <Field name="name" type="String" visibility="package"/>
+        <Field name="dough" type="Dough" visibility="package"/>
+        <Field name="sauce" type="Sauce" visibility="package"/>
+        <Field name="cheese" type="Cheese" visibility="package"/>
+        <Field name="pepperoni" type="Pepperoni" visibility="package"/>
+        <Field name="toppings" type="ArrayList" visibility="package"/>
+      </Fields>
+      <Constructors/>
+      <Methods>
+        <Method name="prepare" returnType="void" visibility="public" isAbstract="true"/>
+        <Method name="bake" returnType="void" visibility="public"/>
+        <Method name="cut" returnType="void" visibility="public"/>
+        <Method name="box" returnType="void" visibility="public"/>
+        <Method name="getName" returnType="String" visibility="public"/>
+        <Method name="setName" returnType="void" visibility="public">
+          <Argument type="String" name="name"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="PizzaStore" package="" visibility="public" isAbstract="true" xPosition="1220.0" yPosition="420.0">
+      <Fields/>
+      <Constructors/>
+      <Methods>
+        <Method name="orderPizza" returnType="Pizza" visibility="public">
+          <Argument type="String" name="type"/>
+        </Method>
+        <Method name="createPizza" returnType="Pizza" visibility="package" isAbstract="true">
+          <Argument type="String" name="type"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="PlumTomatoSauce" package="" visibility="public" xPosition="1520.0" yPosition="420.0">
+      <Fields/>
+      <Constructors/>
+      <Methods/>
+    </Class>
+    <Class name="PunjabiIngredientsFactory" package="" visibility="public" xPosition="1820.0" yPosition="420.0">
+      <Fields/>
+      <Constructors/>
+      <Methods>
+        <Method name="createDough" returnType="Dough" visibility="public"/>
+        <Method name="createSauce" returnType="Sauce" visibility="public"/>
+        <Method name="createCheese" returnType="Cheese" visibility="public"/>
+        <Method name="createPepperoni" returnType="Pepperoni" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="PunjabiStylePizzaStore" package="" visibility="public" xPosition="2120.0" yPosition="420.0">
+      <Fields/>
+      <Constructors/>
+      <Methods>
+        <Method name="createPizza" returnType="Pizza" visibility="package">
+          <Argument type="String" name="type"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="ReggianoCheese" package="" visibility="public" xPosition="20.0" yPosition="820.0">
+      <Fields/>
+      <Constructors/>
+      <Methods/>
+    </Class>
+    <Class name="SindhiIngredientFactory" package="" visibility="public" xPosition="620.0" yPosition="820.0">
+      <Fields/>
+      <Constructors/>
+      <Methods>
+        <Method name="createDough" returnType="Dough" visibility="public"/>
+        <Method name="createSauce" returnType="Sauce" visibility="public"/>
+        <Method name="createCheese" returnType="Cheese" visibility="public"/>
+        <Method name="createPepperoni" returnType="Pepperoni" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="SindhiStylePizzaStore" package="" visibility="public" xPosition="920.0" yPosition="820.0">
+      <Fields/>
+      <Constructors/>
+      <Methods>
+        <Method name="createPizza" returnType="Pizza" visibility="package">
+          <Argument type="String" name="type"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="SlicedPepperoni" package="" visibility="public" xPosition="1220.0" yPosition="820.0">
+      <Fields/>
+      <Constructors/>
+      <Methods/>
+    </Class>
+    <Class name="ThickCrustDough" package="" visibility="public" xPosition="1520.0" yPosition="820.0">
+      <Fields/>
+      <Constructors/>
+      <Methods/>
+    </Class>
+    <Class name="ThinCrustDough" package="" visibility="public" xPosition="1820.0" yPosition="820.0">
+      <Fields/>
+      <Constructors/>
+      <Methods/>
+    </Class>
+    <Class name="VeggiePizza" package="" visibility="public" xPosition="2120.0" yPosition="820.0">
+      <Fields>
+        <Field name="ingredientFactory" type="PizzaIngredientFactory" visibility="package"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public">
+          <Argument type="PizzaIngredientFactory" name="pif"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="prepare" returnType="void" visibility="public"/>
+      </Methods>
+    </Class>
+    <Interface name="Cheese" package="" visibility="public" xPosition="20.0" yPosition="20.0">
+      <Methods/>
+    </Interface>
+    <Interface name="Dough" package="" visibility="public" xPosition="1820.0" yPosition="20.0">
+      <Methods/>
+    </Interface>
+    <Interface name="Pepperoni" package="" visibility="public" xPosition="58.0" yPosition="334.0">
+      <Methods/>
+    </Interface>
+    <Interface name="PizzaIngredientFactory" package="" visibility="public" xPosition="920.0" yPosition="420.0">
+      <Methods>
+        <Method name="createDough" returnType="Dough" visibility="public"/>
+        <Method name="createSauce" returnType="Sauce" visibility="public"/>
+        <Method name="createCheese" returnType="Cheese" visibility="public"/>
+        <Method name="createPepperoni" returnType="Pepperoni" visibility="public"/>
+      </Methods>
+    </Interface>
+    <Interface name="Sauce" package="" visibility="public" xPosition="320.0" yPosition="820.0">
+      <Methods/>
+    </Interface>
+  </ClassDiagramComponents>
+  <ClassDiagramRelations>
+    <IsRelation name="is" source="SindhiStylePizzaStore" target="PizzaStore"/>
+    <UseRelation source="PizzaStore" target="Pizza" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <ImplementsRelation name="&lt;&lt;implements&gt;&gt;" source="ChoppedPepperoni" target="Pepperoni"/>
+    <UseRelation source="PizzaIngredientFactory" target="Pepperoni" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <UseRelation source="SindhiIngredientFactory" target="Cheese" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <ImplementsRelation name="&lt;&lt;implements&gt;&gt;" source="ReggianoCheese" target="Cheese"/>
+    <HasRelation name="cheese" source="Pizza" target="Cheese" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <UseRelation source="PunjabiIngredientsFactory" target="Pepperoni" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <IsRelation name="is" source="VeggiePizza" target="Pizza"/>
+    <HasRelation name="ingredientFactory" source="PepporoniPizza" target="PizzaIngredientFactory" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <UseRelation source="PizzaIngredientFactory" target="Sauce" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <UseRelation source="SindhiIngredientFactory" target="Sauce" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <HasRelation name="pepperoni" source="Pizza" target="Pepperoni" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <UseRelation source="PizzaIngredientFactory" target="Dough" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <UseRelation source="PunjabiStylePizzaStore" target="Pizza" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <HasRelation name="ingredientFactory" source="ChickenPizza" target="PizzaIngredientFactory" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <HasRelation name="ingredientFactory" source="CheesePizza" target="PizzaIngredientFactory" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <UseRelation source="PunjabiIngredientsFactory" target="Dough" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <ImplementsRelation name="&lt;&lt;implements&gt;&gt;" source="SindhiIngredientFactory" target="PizzaIngredientFactory"/>
+    <UseRelation source="SindhiStylePizzaStore" target="Pizza" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <ImplementsRelation name="&lt;&lt;implements&gt;&gt;" source="MozzarellaCheese" target="Cheese"/>
+    <IsRelation name="is" source="ChickenPizza" target="Pizza"/>
+    <HasRelation name="ingredientFactory" source="VeggiePizza" target="PizzaIngredientFactory" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <ImplementsRelation name="&lt;&lt;implements&gt;&gt;" source="SlicedPepperoni" target="Pepperoni"/>
+    <HasRelation name="dough" source="Pizza" target="Dough" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <UseRelation source="SindhiIngredientFactory" target="Dough" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <ImplementsRelation name="&lt;&lt;implements&gt;&gt;" source="ChilliTomatoSauce" target="Sauce"/>
+    <ImplementsRelation name="&lt;&lt;implements&gt;&gt;" source="ThickCrustDough" target="Dough"/>
+    <UseRelation source="PizzaIngredientFactory" target="Cheese" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <ImplementsRelation name="&lt;&lt;implements&gt;&gt;" source="ThinCrustDough" target="Dough"/>
+    <UseRelation source="PunjabiIngredientsFactory" target="Cheese" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <ImplementsRelation name="&lt;&lt;implements&gt;&gt;" source="PlumTomatoSauce" target="Sauce"/>
+    <IsRelation name="is" source="PepporoniPizza" target="Pizza"/>
+    <IsRelation name="is" source="PunjabiStylePizzaStore" target="PizzaStore"/>
+    <HasRelation name="sauce" source="Pizza" target="Sauce" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <UseRelation source="SindhiIngredientFactory" target="Pepperoni" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <ImplementsRelation name="&lt;&lt;implements&gt;&gt;" source="PunjabiIngredientsFactory" target="PizzaIngredientFactory"/>
+    <IsRelation name="is" source="CheesePizza" target="Pizza"/>
+    <UseRelation source="PunjabiIngredientsFactory" target="Sauce" sourceCardinality="1..1" targetCardinality="1..1"/>
+  </ClassDiagramRelations>
+</ClassDiagram>

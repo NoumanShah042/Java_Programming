@@ -1,0 +1,12 @@
+
+
+*these pages contain all java classes explaination
+*just press ctrl+f
+*and type the class name and find its summary
+
+
+i)
+https://docs.oracle.com/javase/7/docs/api/allclasses-noframe.html
+
+ii)
+https://docs.oracle.com/javase/6/docs/api/

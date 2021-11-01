@@ -1,0 +1,24 @@
+Create a Java archive (.jar) file using NetBeans as follows:
+
+Right-click on the Project name
+Select Properties
+Click Packaging
+Check Build JAR after Compiling
+Check Compress JAR File
+Click OK to accept changes
+Right-click on a Project name
+Select Build or Clean and Build
+Clean and Build will first delete build artifacts (such as .class files), whereas Build will retain any existing .class files, creating new versions necessary. To elucidate, imagine a project with two classes, A and B.
+
+When built the first time, the IDE creates A.class and B.class. Now you delete B.java but don't clear out B.class. Executing Build should leave B.class in the build directory, and bundle it into the JAR. Selecting Clean and Build will delete B.class. Since B.java was deleted, no longer will B.class be bundled.
+
+The JAR file is built. To view it inside NetBeans:
+
+Click the Files tab
+Expand Project name >> dist
+Ensure files aren't being excluded when building the JAR file.
+
+share  improve this answer  follow 
+edited May 3 '16 at 16:31
+
+Dave Jarvis

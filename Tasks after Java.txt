@@ -1,0 +1,53 @@
+*****************************************************************
+basic for web or android world is XML
+
+*****************************************************************
+Sequence of learning Spring
+
+1)core Java
+2)Servlet JSP
+3)Maven
+4)Design Patterns
+5)Hibernate
+6)Spring
+
+*****************************************************************
+https://www.youtube.com/watch?v=1kkvalOcSog&list=PLsyeobzWxl7pFZoGT1NbZJpywedeyzyaf&index=1
+
+ Core Java :  https://goo.gl/goRdes​
+ JDBC : https://goo.gl/AhvbC8​
+ XML : https://goo.gl/aKx4aA​
+ Servlet JSP (new) : https://goo.gl/1Qqwnr​   (prerequisite is core JAVA)
+ Maven : https://goo.gl/pyvK53​  (a build tool)
+ Hibernate : https://goo.gl/wdpZaJ​
+ Design Patterns : https://goo.gl/N5CJuU​
+ Spring : https://goo.gl/RPDDe8​    (provide all modules)
+ Spring MVC : https://goo.gl/dBLZZu​   (spring web development module)( prerquisites are servlet and JSP )
+ Rest API : https://goo.gl/7imQj3​
+ Spring MVC Project on AWS : https://goo.gl/PL9C2u​
+
+ Java web Development Spring MVC(AWS)
+ AWS codeStar(deploy app on AWS)
+
+ 
+
+ Spring Full Course : https://courses.telusko.com/learn/Spr...​
+ Spring Full Course (UDEMY) : https://www.udemy.com/spring-5-with-s...​
+ Angular Full Course : https://courses.telusko.com/learn/Ang...​
+
+*****************************************************************
+
+
+
+BIG DATA:
+1) Hadoop   (best language it is JAVA  )
+2) Apache Spark
+
+
+*****************************************************************
+For Android 
+
+1)core Java
+2)Kotlin
+3) Android
+
