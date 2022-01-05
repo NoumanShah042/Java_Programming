@@ -33,15 +33,14 @@ class Student
         arr[3] = new Student(4,"dharmesh");
         arr[4] = new Student(5,"mohit");
         // accessing the elements of the specified array
-        
-//        for(Student std : arr)
-//        {
-//            
-//            System.out.println("Element at " + i + " : " + arr[i].roll_no +" "+ arr[i].name);
-//        
+         int i = 0;
+        for (Student std : arr) {
+
+            System.out.println("Element at " + i + " : " + std.roll_no + " " + std.name);
+            i++;
+        }
+//
+//        for (int i = 0; i < arr.length; i++) {
+//            System.out.println("Element at " + i + " : " + arr[i].roll_no + " " + arr[i].name);
 //        }
-//        
-        for (int i = 0; i < arr.length; i++)
-        System.out.println("Element at " + i + " : " + arr[i].roll_no +" "+ arr[i].name);
-    }
 }

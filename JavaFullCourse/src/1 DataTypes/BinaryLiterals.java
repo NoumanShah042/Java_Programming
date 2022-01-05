@@ -26,7 +26,7 @@ public class BinaryLiterals {
 		// The b can be lower or upper case 
 		byte a2 = 0B101; 
 		System.out.println("Binary Literal in Byte----->"); 
-		System.out.println("a1 = " + a1 + ", " + "a2 = " + a2); 
+		System.out.println("a1 = " + a1 + ", " + "a2 = " + a2);  //  a1 = 3, a2 = 5 
 
 		// Short type Binary Literal ******************************
 		short b1 = 0b101; 
@@ -34,8 +34,7 @@ public class BinaryLiterals {
 		// The b can be lower or upper case 
 		short b2 = 0B111; 
 		System.out.println("Binary Literal in Short----->"); 
-		System.out.println("b1 = " + b1 + ", "
-						+ "b2 = " + b2); 
+		System.out.println("b1 = " + b1 + ", " + "b2 = " + b2);     //  b1 = 5, b2 = 7
 
 		// Int type Binary literal ******************************
 		int c1 = 0b011; 
@@ -47,7 +46,7 @@ public class BinaryLiterals {
 		System.out.println("c1 = " + c1 + ", "
 						+ "c2 = " + c2+
                                                  ", c3 = " + c3+
-                                                ", c4 = " + c4); 
+                                                ", c4 = " + c4);   // c1 = 3, c2 = 7, c3 = 1024, c4 = 1024
 
 		// Long type Binary literal  ******************************
 		long d1 = 0b0000011111100011; 

@@ -129,7 +129,7 @@ public class Strings {
     
      String objects are immutable
     
-    String st new String("Geeky");
+    String st = new String("Geeky");
     st.concat("Shows");
     
     
